@@ -8,7 +8,7 @@ export default function BigHeaderTop() {
         <img src="/img/backgroundImg.jpeg" alt="background" />
       </div>
       <div className="textPart">
-        <h1>all nexus</h1>
+        <h1>ALL Nexus</h1>
       </div>
     </div>
   );
