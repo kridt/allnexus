@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NavbarComponent from "../components/NavbarComponent";
 import Footer from "../components/Footer";
 import BigHeaderTop from "../components/BigHeaderTop";
+import "./Udtagelser.scss";
 
 export default function Udtagelser() {
   const [udtagelser, setUdtagelser] = useState([]);
