@@ -30,8 +30,11 @@ export default function Udtagelser() {
               <div>
                 <img alt="img" src={udtagelse.img} />
               </div>
-              <h2>{udtagelse.name}</h2>
-              <p>{udtagelse.quote}</p>
+              <div className="textinfo">
+                <h2>{udtagelse.name}</h2>
+                <p>{udtagelse.quote}</p>
+                <br />
+              </div>
             </div>
           );
         })}
