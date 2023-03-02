@@ -1,0 +1,96 @@
+.kurserh1 {
+  color: #0e4b9c;
+  font-size: 2.5rem;
+  background-color: #f4eae0;
+}
+
+#ku {
+  border-bottom: 1px solid brown;
+}
+
+.ads {
+  background-color: #f4eae0;
+  padding: 0 0;
+  box-sizing: border-box;
+  .reklamer {
+    margin: 7em auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10em;
+    .reklame:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+    }
+    .reklame {
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: 1;
+      max-width: 450px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        grid-area: 1/1/1/1;
+      }
+      h2 {
+        grid-area: 1/1/1/1;
+        font-size: 2rem;
+        z-index: 10;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.foredrag {
+  background-color: #fff;
+  width: 100%;
+  .foredragHeadline {
+    padding-top: 3em;
+    margin-left: 20%;
+    color: purple;
+    h1 {
+      text-align: left;
+    }
+  }
+
+  .foredragInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 25em;
+    .foredragImg {
+      flex: 1;
+    }
+    .foredragText {
+      flex: 1;
+      padding: 0 2em;
+      line-height: 2;
+    }
+  }
+}
+
+.online {
+  background-color: #f4eae0;
+
+  .onlinePart {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 25em;
+    color: #c76e4b;
+    .onlineImg {
+      flex: 1;
+    }
+    .onlineText {
+      font-size: 1.2em;
+      ::marker {
+        content: "> ";
+      }
+
+      flex: 1;
+      padding: 0 2em;
+      line-height: 2;
+    }
+  }
+}

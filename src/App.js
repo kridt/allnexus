@@ -5,8 +5,13 @@ import Kurser from "./pages/Kurser";
 import Udtagelser from "./pages/Udtagelser";
 import BilledGalleri from "./pages/BilledGalleri";
 import Kontakt from "./pages/Kontakt";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    console.log("App.js");
+  }, []);
+
   return (
     <BrowserRouter className="App">
       <Routes>

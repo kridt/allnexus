@@ -1,6 +1,11 @@
+body {
+  background-color: #f4eae0;
+}
+
 h1 {
   text-align: center;
 }
+
 .udtagelser {
   width: 90vw;
   display: grid;
@@ -19,6 +24,19 @@ h1 {
         height: 180px;
         object-fit: cover;
         border-radius: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .udtagelser {
+    grid-template-columns: repeat(1, 1fr);
+    .udtagelse {
+      flex-direction: column;
+      div {
+        margin-right: 0;
+        margin-bottom: 2em;
       }
     }
   }
